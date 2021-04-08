@@ -16,15 +16,18 @@ import axios from 'axios';
 function App() {
   const [theme, setTheme] = useLocalState<DefaultTheme>('theme', light);
 
+  const [counter, setCounter] = useState(1);
   const [rick, setRick] = useState([]);
 
   useEffect(() => {
     axios
-    .get('https://rickandmortyapi.com/api/character?count=671')
+    .get('https://rickandmortyapi.com/api/character/')
     .then((res) => {
       const { data } = res;
       const { results } = data;
       const newRick: any = [];
+
+      console.log(counter)
 
       results.forEach((rick: any, index: number) => {
         newRick[index + 1] = {
@@ -32,7 +35,6 @@ function App() {
           name: rick.name,
           url: `https:rickandmortyapi.com/api/character/avatar/${index + 1}.jpeg`
         };
-        console.log(newRick);
       });
       setRick(newRick);
     });
@@ -47,7 +49,7 @@ function App() {
       <ThemeProvider theme={theme}>
           <GlobalStyle />
           <Header toggleTheme={toggleTheme} />
-          <div>
+          <div className="grid-ricks">
             { rick.map((rick: {name: string; id: number; url: string;}) => (
               <Card 
                 key={rick.id} 

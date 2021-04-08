@@ -21,8 +21,8 @@ const Header: React.FC<Props> = ({toggleTheme}) => {
                 height={10}
                 width={40}
                 handleDiameter={20}
-                offColor={colors.secundary}
-                onColor={colors.secundary}
+                offColor={colors.primary}
+                onColor={colors.secondary}
             />
         </StyledHeader>
     )

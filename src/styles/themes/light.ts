@@ -2,9 +2,9 @@ export default {
     title: 'light',
 
     colors: {
-        primary: '#1231c1',
-        secundary: '#57634c',
-        background: '#fff',
-        text: '#fffff'
+        primary: '#C2B8B2',
+        secondary: '#9a1b17',
+        background: '#F5F5F5',
+        text: '#1f1e1e'
     },
 }
