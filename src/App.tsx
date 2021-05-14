@@ -13,10 +13,9 @@ import dark from './styles/themes/dark';
 import GlobalStyle from './styles/global';
 import axios from 'axios';
 
-function App() {
+export default function App() {
   const [theme, setTheme] = useLocalState<DefaultTheme>('theme', light);
 
-  const [counter, setCounter] = useState(1);
   const [rick, setRick] = useState([]);
 
   useEffect(() => {
@@ -26,8 +25,6 @@ function App() {
       const { data } = res;
       const { results } = data;
       const newRick: any = [];
-
-      console.log(counter)
 
       results.forEach((rick: any, index: number) => {
         newRick[index + 1] = {
@@ -62,5 +59,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
