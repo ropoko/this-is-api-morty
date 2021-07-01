@@ -6,15 +6,14 @@ interface Props {
     toggleTheme(): void;
 }
 
-const Header: React.FC<Props> = ({toggleTheme}) => {
+const Header: React.FC<Props> = ({ toggleTheme }) => {
     const { colors, title } = useContext(ThemeContext);
 
-    return(
+    return (
         <StyledHeader>
-            <img src='/logo.png' alt="Logo" />
-            <strong> Rick and Morty </strong>
-            <Switch 
-                onChange={toggleTheme} 
+            <img src='/logo.png' alt="Logo" className="logo" />
+            <Switch
+                onChange={toggleTheme}
                 checked={title === 'dark'}
                 checkedIcon={false}
                 uncheckedIcon={false}
@@ -23,6 +22,7 @@ const Header: React.FC<Props> = ({toggleTheme}) => {
                 handleDiameter={20}
                 offColor={colors.primary}
                 onColor={colors.secondary}
+                className="switch"
             />
         </StyledHeader>
     )
