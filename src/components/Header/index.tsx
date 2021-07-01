@@ -1,8 +1,7 @@
 import React, { useContext } from 'react';
-import { StyledHeader } from './HeaderStyle';
 import Switch from 'react-switch';
 import { ThemeContext } from 'styled-components';
-
+import { StyledHeader } from './HeaderStyle';
 interface Props {
     toggleTheme(): void;
 }
@@ -12,7 +11,8 @@ const Header: React.FC<Props> = ({toggleTheme}) => {
 
     return(
         <StyledHeader>
-            <strong> Hello from header component </strong>
+            <img src='/logo.png' alt="Logo" />
+            <strong> Rick and Morty </strong>
             <Switch 
                 onChange={toggleTheme} 
                 checked={title === 'dark'}
