@@ -3,7 +3,7 @@ export default {
     title: 'dark',
 
     colors: {
-        background: '#141414',
+        background: '#12161C',
         text: '#F5F5F5',
         header: {
             background: 'rgb(36, 40, 47)'

@@ -6,7 +6,7 @@ export default {
         background: '#F5F5F5',
         text: '#1f1e1e',
         header: {
-            background: 'rgb(36, 40, 47)'
+            background: '#FF9800'
         },
         switch: {
             primary: '#2B303A',
