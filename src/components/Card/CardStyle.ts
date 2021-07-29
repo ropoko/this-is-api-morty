@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-export const StyledCard = styled.h3`
+export const StyledCard = styled.div`
     color: red;
 `;

@@ -3,9 +3,17 @@ export default {
     title: 'dark',
 
     colors: {
-        primary: '#C2B8B2',
-        secondary: '#9a1b17',
         background: '#141414',
-        text: '#F5F5F5'
-    },
+        text: '#F5F5F5',
+        header: {
+            background: 'rgb(36, 40, 47)'
+        },
+        switch: {
+            primary: '#C2B8B2',
+            secondary: '#D64933'
+        },
+        card: {
+            background: '#fff3d6'
+        }
+    }
 }
