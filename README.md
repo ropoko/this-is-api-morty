@@ -1,6 +1,7 @@
 # Rick and Morty API with React
+![](https://github.com/ropoko/this-is-api-morty/blob/main/public/screenshot.jpg)
 
-data collected with this public [API](https://rickandmortyapi.com).
+Data fetched with this public [API](https://rickandmortyapi.com).
 
 ## TODO
 - [x] Dark Theme
