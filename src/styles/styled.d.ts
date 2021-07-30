@@ -15,7 +15,8 @@ declare module 'styled-components' {
                 secondary: string
             },
             card: {
-                background: string
+                background: string,
+                title: string
             }
         }
     }

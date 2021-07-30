@@ -13,7 +13,8 @@ export default {
             secondary: '#D64933'
         },
         card: {
-            background: '#fff3d6'
+            background: '#fff3d6',
+            title: 'rgb(36, 40, 47)'
         }
     }
 }

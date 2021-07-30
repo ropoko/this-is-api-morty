@@ -28,7 +28,7 @@ export default createGlobalStyle`
     .grid-ricks {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        row-gap: 3rem;
+        row-gap: 2rem;
     }
 
     @media (min-width: 375px) {
